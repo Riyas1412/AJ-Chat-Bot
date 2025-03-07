@@ -1,0 +1,82 @@
+[data-testid="stAppViewContainer"] > .main {
+    background: radial-gradient(circle at top left, #1a1a1a, #0f0f0f);
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-message {
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    align-self: flex-end;
+    max-width: 80%;
+    font-weight: 500;
+    animation: fadeInUp 0.3s ease-in-out;
+}
+
+.ai-message {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ddd;
+    padding: 12px;
+    border-radius: 10px;
+    align-self: flex-start;
+    max-width: 80%;
+    font-weight: 500;
+    animation: fadeInUp 0.3s ease-in-out;
+}
+
+button {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1b2b50, #254b7c);
+    transform: scale(1.03);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
